@@ -1,0 +1,288 @@
+.navbar-lower{
+    padding:0;
+    box-shadow: 0 5px 10px -6px rgb(167, 167, 167);
+}
+/* navbar toggler button style */
+.navbar-toggler{
+    margin-right: 0.5em;
+}
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.7)' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/* end of navbar toggler button */
+
+.collapse{                      /* collpsible section styling */
+    margin:0;
+
+}
+ul.navbar-nav{
+    background-color:black;
+}
+
+.navbar-brand{
+    margin:0.3em 1em;
+}
+.nav-link{
+    text-align:center;
+    color:white;
+}
+.nav-item{
+    margin: 2px 0;
+}
+.nav-item.active a{
+    color : rgb(40, 202, 40) !important;
+}
+.nav-item a:hover{   
+    color : rgb(40, 202, 40) !important;
+    transition: color 0.5s ease;
+}
+/* contact on the navbar */
+.contact-info{
+    height:45px;
+    position:relative;
+    justify-content: flex-end;
+}
+.contact-no{
+    margin-right :6px;
+    height:100%;
+    color : rgb(151, 151, 151) !important;
+}
+.contact-no img{
+    height:100%;
+}
+.contact-no img+span{
+    margin-left:6px;
+}
+/* end of contact on the navbar */
+/*End of navbar*/
+/*main section starts here*/
+main{
+    color:grey;
+    margin: 1rem 0;
+}
+
+.heading{
+    color:rgb(40, 202, 40);
+}
+/* css for property section */
+
+.property-header{
+    padding: 3rem 0;
+    padding-bottom: 1rem;
+}
+.property-header>p{
+    width:350px;
+    margin: 1rem auto;
+}
+
+.property-preview{
+    margin: 0;
+}
+.property-image{
+    width:100%;
+    margin:0;
+}
+.property-info{
+    background-color: black;
+    color:white;
+    display:flex;
+    padding:0.3em;
+    justify-content: space-between;
+}
+
+.property-info span{
+    font-size:14px;
+    text-align: center;
+    white-space: nowrap;
+}
+.property-info span:last-child{
+    visibility: hidden;
+}
+.property-price{
+    color:rgb(29, 218, 29);
+}
+.property-name{
+    color:black;
+}
+.property-details{
+    margin:1em 0;
+    margin-bottom: 1rem;
+}
+.property-footer{
+    border-top: 1px solid rgb(0,0,0,0.2);
+    padding: 0.5rem 0;
+
+    margin-bottom:3rem;
+    text-align:left;
+}
+.property-footer-text{
+    white-space: nowrap;
+    font-size: 14px;
+    color:rgb(175, 175, 175);
+}
+.bag-image{
+    width:18px;
+    object-fit:cover;
+    vertical-align: text-bottom;
+}
+/* css for property section ends here */
+/* css for agent section headings */
+.agents{
+    background: rgb(40, 202, 40);
+    color: white;
+}
+.agent-header{
+    padding-top: 2rem;
+}
+.agent-header>h1{
+    margin-bottom:1rem;
+}
+.agent-header>p{
+    margin:auto;
+    margin-top:1em;
+    width:350px;
+}
+/*agent profile css*/
+.agent-profile{
+    width:200px;
+    margin:auto;
+}
+.profile-pic{
+    width:100%;
+    height:200px;
+    overflow: hidden;
+}
+.profile-pic img{
+    width : 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile-info{
+    width:100%;
+    margin: 5px 0;
+    text-align: center;
+}
+.agent-name{
+    font-weight: bold;
+}
+.follow-links{
+    display:flex;
+    justify-content: center;
+}
+.link-container{
+    width:40px;
+    overflow:hidden;
+    margin: auto;
+}
+
+.link img{
+    width:100%;
+}
+/* agent profile css ends here */
+/* footer */
+footer{
+    text-align: center;
+    font-size: 14px;
+    padding:0.3em 0;
+}
+
+/*carousel customization*/
+.owl-carousel{
+    padding:1rem;
+}
+.left-button{
+    transform: rotate(180deg);
+    width:60px;
+}
+.right-button{
+    width:60px;
+}
+.left-button>img,.right-button>img{
+    width:100%;
+}
+button.owl-prev{
+    position:absolute;
+    top:40%;
+    left:-15px;
+    opacity:0.6;
+}
+button.owl-next{
+    position:absolute;
+    top:40%;
+    right:-15px;
+    opacity:0.6;
+}
+button.owl-next:hover,button.owl-prev:hover{
+    opacity: 1;
+}
+/*carousel section ends here*/
+
+@media only screen and (min-width: 576px){
+    .nav-item{
+    margin-left: 0.5rem;
+    }
+    ul.navbar-nav{
+        background-color:inherit;
+    }
+    .contact-no{
+        margin-right: 8px;
+    }
+    .navbar,.nav-item a{
+        color : rgb(151, 151, 151) !important;
+    }
+    .navbar-lower{
+        box-shadow: 0 5px 10px -6px #777;
+        padding-right:12px;
+    }
+    .navbar-nav{
+        margin-right: 0.5em;
+    }
+    .collapse{
+        background-color:white;
+    }
+    .property-info span{
+        font-size:10px;
+    }
+    .property-info span:last-child{
+        visibility:visible;
+    }
+    .property-footer{
+        margin-bottom:40px;
+    }
+    .property-header>p,.agent-header>p{
+        width:500px;
+    }
+    .owl-carousel{
+        padding:2rem 0;
+        padding-left:2.5rem;
+    }
+}
+@media only screen and (min-width: 768px){
+
+    .property-header>p,.agent-header>p{
+        width:720px;
+    }
+}
+@media only screen and (min-width: 992px){
+    .navbar{
+        padding-left: calc(50% - 600px);
+        padding-right: calc(50% - 600px);
+    }
+    main>.row{
+        margin:auto;
+        max-width:1200px;
+    }
+    .contact-no{
+        margin-right: 12px;
+    }
+    .property-info{
+        padding:0.5em;
+    }
+    .property-info span{
+        font-size:14px;
+    }
+    .agents>.owl-carousel{
+        margin:auto;
+        max-width:1200px;
+    }
+}
